@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+/*產生緩慢滑動效果*/
+html{
+    scroll-behavior:smooth;
+}
+/*網頁的最上方*/
+header{
+    background:rgb(135, 40, 135);
+    padding:1rem;
+}
+.author_name{
+    padding:0.25rem;
+    color : white;
+    font-size:1.5rem;
+
+}
+.quote{
+    color:rgb(175, 195, 245);
+    font-size:1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+    letter-spacing:0.25px;
+    font-style: italic;
+    padding-left:1.5rem;
+}
+
+/* nav 調整*/
+.container_nav{
+    background:rgb(0, 65, 135);
+    position:sticky;
+    top:0;
+}
+nav ul{
+    display:flex;
+    list-style-type:none;
+    padding-left:1rem;
+    justify-content:space-evenly;
+}
+
+nav ul li{
+    padding:0.5rem 0.5rem;
+}
+nav ul li a{
+
+    text-decoration:none;
+    color:rgb(210, 210, 210);
+    display:inline-block; 
+     
+}
+nav ul li a:hover{
+    color:white;
+    transform : scale(1.25);
+    transition: all 0.75s ease;
+}
+.active{
+    color:white;
+}
+
+/*介紹自己的部分*/
+
+.introduce{
+    width:100%;
+    display:flex;
+}
+
+/*介紹左右半部*/
+section.left
+,section.right{
+    padding:2rem;
+}
+/*介紹左半部*/
+section.left{
+    width:45%
+}
+/*介紹右半部*/
+section.right{
+    width:55%
+}
+
+/*about me*/
+
+.img{
+    width:25vw;
+    height:25vw;
+    display:block;
+}
+
+#brief_intro{
+    font-size: 0.95rem;
+}
+
+.intro_color{
+    color:rgb(250, 145, 60);
+    font-style : bold;
+}
+
+/*education*/
+
+.enfont_style{
+    color:rgb(170, 15, 130);
+    list-style-type:none;
+    font-family:italic;
+}
+
+/* RWD */
+@media only screen and(max-width:475px){
+    nav ul{
+        flex-direction:column;
+    }
+
+}
+}

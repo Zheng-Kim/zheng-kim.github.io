@@ -1,0 +1,133 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+  /*產生緩慢滑動效果*/
+  /*網頁的最上方*/
+  /* nav 調整*/
+  /*介紹自己的部分*/
+  /*介紹左右半部*/
+  /*介紹左半部*/
+  /*介紹右半部*/
+  /*about me*/
+  /*education*/
+  /* RWD */
+}
+
+* html {
+  scroll-behavior: smooth;
+}
+
+* header {
+  background: #872887;
+  padding: 1rem;
+}
+
+* .author_name {
+  padding: 0.25rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+* .quote {
+  color: #afc3f5;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+  letter-spacing: 0.25px;
+  font-style: italic;
+  padding-left: 1.5rem;
+}
+
+* .container_nav {
+  background: #004187;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+* nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* nav ul li {
+  padding: 0.5rem 0.5rem;
+}
+
+* nav ul li a {
+  text-decoration: none;
+  color: #d2d2d2;
+  display: inline-block;
+}
+
+* nav ul li a:hover {
+  color: white;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+* .active {
+  color: white;
+}
+
+* .introduce {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* section.left
+, * section.right {
+  padding: 2rem;
+}
+
+* section.left {
+  width: 45%;
+}
+
+* section.right {
+  width: 55%;
+}
+
+* .img {
+  width: 25vw;
+  height: 25vw;
+  display: block;
+}
+
+* #brief_intro {
+  font-size: 0.95rem;
+}
+
+* .intro_color {
+  color: #fa913c;
+  font-style: bold;
+}
+
+* .enfont_style {
+  color: #aa0f82;
+  list-style-type: none;
+  font-family: italic;
+}
+
+@media only screen and (max-width: 475px) {
+  * nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
