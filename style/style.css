@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Noto Sans TC', sans-serif;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  scroll-behavior: smooth;
   /*產生緩慢滑動效果*/
   /*網頁的最上方*/
   /* nav 調整*/
@@ -39,7 +40,7 @@
 * .quote {
   color: #afc3f5;
   font-size: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serifs;
   letter-spacing: 0.25px;
   font-style: italic;
   padding-left: 1.5rem;
@@ -59,8 +60,8 @@
   list-style-type: none;
   padding-left: 1rem;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 * nav ul li {
@@ -76,7 +77,7 @@
 * nav ul li a:hover {
   color: white;
   -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
 }
@@ -92,8 +93,8 @@
   display: flex;
 }
 
-* section.left
-, * section.right {
+* section.left,
+* section.right {
   padding: 2rem;
 }
 
@@ -112,7 +113,7 @@
 }
 
 * #brief_intro {
-  font-size: 0.75rem;
+  font-size: 1.25rem;
 }
 
 * .intro_color {
@@ -130,8 +131,8 @@
   * nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

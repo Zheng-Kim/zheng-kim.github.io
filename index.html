@@ -22,9 +22,55 @@
     <!--CSS樣式表-->
     <link rel="stylesheet" href="./style/style.css" />
 
+    <style>
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(70, 5, 110);
+        color: white;
+        cursor: pointer;
+        padding: 13.5px;
+        border-radius: 10px;
+    }
+
+    #myBtn:hover {
+      background-color: rgb(20, 150, 235);
+    }
+
+    </style>
+    
+
     <!-- <link rel="stylesheet" href=""> -->
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
     <!--標題-->
     <header>
       <h1 class="author_name">
@@ -53,11 +99,12 @@
       </nav>
     </div>
     <!--主要內容-->
+    
     <main>
       <!--左半部區塊-->
       <div class="introduce myself">
         <section class="left">
-          <img class="img" src="./images/me.jpg" alt="me_cartoon_picture" />
+          <img class="img" src="./images/me_02.jpg" alt="me_cartoon_picture" />
         </section>
         <!--右半部區塊-->
         <section class="right">

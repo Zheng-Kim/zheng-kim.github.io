@@ -3,6 +3,8 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Noto Sans TC', sans-serif;
+    scroll-behavior:smooth;
+}
 /*產生緩慢滑動效果*/
 html{
     scroll-behavior:smooth;
@@ -10,6 +12,9 @@ html{
 hr{
     background: rgba(250, 220, 255, 0.875);
 }
+
+/*回到頂層的button*/
+
 /*網頁的最上方*/
 header{
     background:rgb(135, 40, 135);
@@ -92,7 +97,7 @@ section.right{
 }
 
 #brief_intro{
-    font-size: 0.75rem;
+    // font-size: 1.25rem;
 }
 
 .intro_color{
@@ -115,4 +120,4 @@ section.right{
     }
 
 }
-}
+
