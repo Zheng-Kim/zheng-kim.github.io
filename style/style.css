@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   /*產生緩慢滑動效果*/
   /*網頁的最上方*/
   /* nav 調整*/
@@ -21,9 +21,13 @@
   scroll-behavior: smooth;
 }
 
+* hr {
+  background: rgba(250, 220, 255, 0.875);
+}
+
 * header {
   background: #872887;
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 * .author_name {
@@ -102,17 +106,17 @@
 }
 
 * .img {
-  width: 25vw;
-  height: 25vw;
+  width: 25.5vw;
+  height: 25.5vw;
   display: block;
 }
 
 * #brief_intro {
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 }
 
 * .intro_color {
-  color: #fa913c;
+  color: #fa780f;
   font-style: bold;
 }
 
