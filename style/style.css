@@ -6,38 +6,31 @@
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
   scroll-behavior: smooth;
-  /*產生緩慢滑動效果*/
-  /*網頁的最上方*/
-  /* nav 調整*/
-  /*介紹自己的部分*/
-  /*介紹左右半部*/
-  /*介紹左半部*/
-  /*介紹右半部*/
-  /*about me*/
-  /*education*/
-  /* RWD */
 }
 
-* html {
+/*產生緩慢滑動效果*/
+html {
   scroll-behavior: smooth;
 }
 
-* hr {
+hr {
   background: rgba(250, 220, 255, 0.875);
 }
 
-* header {
+/*回到頂層的button*/
+/*網頁的最上方*/
+header {
   background: #872887;
   padding: 1.25rem;
 }
 
-* .author_name {
+.author_name {
   padding: 0.25rem;
   color: white;
   font-size: 1.5rem;
 }
 
-* .quote {
+.quote {
   color: #afc3f5;
   font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serifs;
@@ -46,14 +39,18 @@
   padding-left: 1.5rem;
 }
 
-* .container_nav {
+/* nav 調整*/
+.container_nav {
   background: #004187;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  -webkit-box-shadow: 0 3px 3px -1.5px #057373;
+  box-shadow: 0 3px 3px -1.5px #057373;
+  z-index: 5;
 }
 
-* nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,17 +61,17 @@
   justify-content: space-evenly;
 }
 
-* nav ul li {
+nav ul li {
   padding: 0.5rem 0.5rem;
 }
 
-* nav ul li a {
+nav ul li a {
   text-decoration: none;
   color: #d2d2d2;
   display: inline-block;
 }
 
-* nav ul li a:hover {
+nav ul li a:hover {
   color: white;
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
@@ -82,53 +79,96 @@
   transition: all 0.75s ease;
 }
 
-* .active {
+.active {
   color: white;
 }
 
-* .introduce {
+/*介紹自己的部分*/
+.introduce {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-* section.left,
-* section.right {
+/*介紹左右半部*/
+section.left,
+section.right {
   padding: 2rem;
 }
 
-* section.left {
+/*介紹左半部*/
+section.left {
   width: 45%;
 }
 
-* section.right {
+/*介紹右半部*/
+section.right {
   width: 55%;
 }
 
-* .img {
+/*about me*/
+div.img_container {
+  overflow: hidden;
+  width: 25.5vw;
+  height: 25.5vw;
+  border-radius: 50%;
+}
+.img {
   width: 25.5vw;
   height: 25.5vw;
   display: block;
+  border-radius: 50%;
+  transition: all 0.75s ease-out;
+}
+img:hover {
+  transform: scale(1.25);
 }
 
-* #brief_intro {
+#brief_intro {
   font-size: 1.25rem;
 }
 
-* .intro_color {
+.intro_color {
   color: #fa780f;
   font-style: bold;
 }
 
-* .enfont_style {
+/*education*/
+.enfont_style {
   color: #aa0f82;
   list-style-type: none;
   font-family: italic;
+  font-size: 1.25rem;
 }
 
+/*scroll bar*/
+/* scroll bar width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* scroll bar Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* scroll bar Handle */
+::-webkit-scrollbar-thumb {
+  background: #78a0b7;
+  border-radius: 2.5px;
+}
+
+/* scroll bar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5f7d87;
+}
+
+/* RWD */
 @media only screen and (max-width: 475px) {
-  * nav ul {
+  nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
