@@ -17,6 +17,11 @@ hr {
   background: rgba(250, 220, 255, 0.875);
 }
 
+p {
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
 /*回到頂層的button*/
 /*網頁的最上方*/
 header {
@@ -108,11 +113,19 @@ section.right {
 }
 
 /*about me*/
-div.img_container {
+/*圓形圖框*/
+div.img_container_cir {
   overflow: hidden;
   width: 25.5vw;
   height: 25.5vw;
   border-radius: 50%;
+}
+/*方形圖框*/
+div.img_container_rect {
+  overflow: hidden;
+  width: 30.5vw;
+  height: 30.5vw;
+  border-radius: 25.5%;
 }
 .img {
   width: 25.5vw;
@@ -164,6 +177,13 @@ img:hover {
 /* scroll bar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5f7d87;
+}
+
+#itsa_pic {
+  display: inline-block;
+  width: 30.5vw;
+  height: 30.5vw;
+  transition: all 0.55s ease-out;
 }
 
 /* RWD */
