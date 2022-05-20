@@ -127,9 +127,9 @@ div.img_container_cir {
 /*方形圖框，浮出效果*/
 div.img_container_rect {
   overflow: hidden;
-  width: 30.5vw;
-  height: 30.5vw;
-  border-radius: 25.5%;
+  width: 23.5vw;
+  height: 23.5vw;
+  border-radius: 22.5%;
 }
 .img {
   width: 25.5vw;
@@ -187,9 +187,16 @@ img:hover {
 /*itsa照片設定*/
 #itsa_pic {
   display: inline-block;
-  width: 30.5vw;
-  height: 30.5vw;
+  width: 23.5vw;
+  height: 25.5vw;
   transition: all 0.55s ease-out;
+}
+/*bestpaper2021照片設定*/
+#bestpaper2021 {
+  display: inline-block;
+  width: 23.5vw;
+  height: 23.5vw;
+  transition: all 0.35s ease-out;
 }
 
 /*技能圖像的css*/
