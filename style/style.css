@@ -234,5 +234,8 @@ img:hover {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  * {
+    font-size: 0.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
