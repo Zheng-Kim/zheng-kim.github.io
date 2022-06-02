@@ -57,6 +57,7 @@ header {
   -webkit-box-shadow: 0 3px 3px -1.5px #057373;
   box-shadow: 0 3px 3px -1.5px #057373;
   z-index: 5;
+  transition: all 0.75s ease;
 }
 
 nav ul {
@@ -239,3 +240,7 @@ img:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.classred {
+  background-color: red;
+}
