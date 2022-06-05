@@ -1,12 +1,22 @@
 let nav = document.querySelector(".container_nav");
+let nav_anchor = document.querySelectorAll("div nav ul li a");
 
+// console.log(nav_anchor);
+
+console.log(nav);
 window.addEventListener("scroll", (e) => { 
 
     if (window.pageYOffset != 0) {
         nav.style = "background-color:rgba(25,55,125,0.75);";
+        nav_anchor.forEach((n) => {
+            n.style = "color:#B3C5F5;";
+        });
     }
     else { 
         nav.style = "";
+       nav_anchor.forEach((n) => {
+            n.style = "";
+        });
     }
 
 });
@@ -319,6 +329,37 @@ window.addEventListener("scroll", (e) => {
 
 // button.style = "";
 
+// let _h1 = document.querySelectorAll("h1");
+// // 一次修改所有指定tag的方式:配合forEach做設定
+
+// _h1.forEach((a) => {
+    
+//     a.innerHTML = "<mark>我好帥</mark>";  //差別在innerHTML => 可以加入HTML語法
+
+
+// });
+// let a = document.querySelector("div.a");
+// let b = document.querySelector("div.b");
+
+// a.addEventListener("click", (e) => {
+    
+//     alert("a callbackfuntion");
+
+// });
+// b.addEventListener("click", (e) => {
+
+//     alert("b callbackfunction");
+// });
+
+
+let is_handsome = true;
+
+localStorage.setItem("Kien's Face", JSON.stringify(is_handsome));
+
+let face = JSON.parse(localStorage.getItem("Kien's Face"));
+
+console.log(face);
+console.log(typeof (face));
 
 
 
